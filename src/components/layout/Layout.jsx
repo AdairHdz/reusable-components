@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import { DesktopSideBar } from "./sidebar/DesktopSideBar";
 import { MobileSideBar } from "./sidebar/MobileSideBar";
 import { useWindowSize } from "../../hooks/use-window-size";
-import { DropdownButton } from "./dropdown/DropdownButton"
+import { DropdownButton } from "../generics/dropdown/DropdownButton"
 import { styled } from "styled-components";
 import { useAuth } from "../../hooks/use-auth";
 

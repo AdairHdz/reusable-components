@@ -1,13 +1,6 @@
 /**
- * @typedef FilterInfo
- * @property {string} key
- * @property {string} value
- * @property {Array<any>} data
- */
-
-/**
  * 
- * @param {FilterInfo} filterInfo
+ * @param {import('./TableProps').FilterInfo} filterInfo
  */
 export const filterValues = (filterInfo) => {    
     if(!filterInfo.value.trim()) {

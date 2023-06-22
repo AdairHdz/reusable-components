@@ -6,32 +6,18 @@ import { PrimaryButton } from '../../../src/components/generics/buttons/PrimaryB
 import { ButtonVariants } from '../../../src/components/generics/buttons/ButtonProps';
 // import {describe, it, expect} from "vitest"
 
+const dummyResponse = {
+    status: 200,
+    message: "",
+    data: DEFAULT_VALUES.theme
+};
+
 describe("Button ", () => {
     it("should display correct primary styles", async () => {
         render(
             <ThemeContextProvider
                 themeFetcher={{
-                    get: () => Promise.resolve({
-                        status: 200,
-                        message: "",
-                        data: {
-                            primaryColor: "#8C278F",
-                            primaryVariantColor: "#ce73d1",
-                            secondaryColor: "#34C38F",
-                            secondaryVariantColor: "#9adbc3",
-                            tertiaryColor: "#E1A401",
-                            tertiaryVariantColor: "#e6c15e",
-                            backgroundColor: "#FFFFFF",
-                            surface: "#FFFFFF",
-                            error: "#B00020",
-                            onPrimary: "#FFFFFF",
-                            onSecondary: "#FFFFFF",
-                            onTertiary: "#FFFFFF",
-                            onBackground: "#000000",
-                            onSurface: "#000000",
-                            onError: "#FFFFFF"
-                        }
-                    })
+                    get: () => Promise.resolve(dummyResponse)
                 }}
             >
                 <PrimaryButton>
@@ -62,27 +48,7 @@ describe("Button ", () => {
         render(
             <ThemeContextProvider
                 themeFetcher={{
-                    get: () => Promise.resolve({
-                        status: 200,
-                        message: "",
-                        data: {
-                            primaryColor: "#8C278F",
-                            primaryVariantColor: "#ce73d1",
-                            secondaryColor: "#34C38F",
-                            secondaryVariantColor: "#9adbc3",
-                            tertiaryColor: "#E1A401",
-                            tertiaryVariantColor: "#e6c15e",
-                            backgroundColor: "#FFFFFF",
-                            surface: "#FFFFFF",
-                            error: "#B00020",
-                            onPrimary: "#FFFFFF",
-                            onSecondary: "#FFFFFF",
-                            onTertiary: "#FFFFFF",
-                            onBackground: "#000000",
-                            onSurface: "#000000",
-                            onError: "#FFFFFF"
-                        }
-                    })
+                    get: () => Promise.resolve(dummyResponse)
                 }}
             >
                 <PrimaryButton

@@ -1,37 +1,12 @@
 import { useTheme } from "../../../hooks/use-theme";
 import PaginatorButton from "./PaginatorButton";
-import { paginatorButtonTypes } from "./paginator-button-types";
+import { paginatorButtonTypes } from "./TableProps";
 
-/**
- * @typedef Link
- * @property {string | undefined} firstPage
- * @property {string | undefined} lastPage
- * @property {string | undefined} previousPage
- * @property {string | undefined} nextPage
- */
 
-/**
- * @typedef PaginationLinks
- * @property {Link} links
- * @property {number | undefined} currentPage
- * @property {number | undefined} totalPages
- * @property {number | undefined} rowsPerPage
- * @property {number | undefined} totalRows
- */
-
-/**
- * @typedef TablePaginatorProps 
- * @property {PaginationLinks} paginationLinks
- * @property {() => void} goToFirstPageHandler
- * @property {() => void} goToLastPageHandler
- * @property {() => void} goToPreviousPageHandler
- * @property {() => void} goToNextPageHandler
- *
- */
 
 /**
  * 
- * @param {TablePaginatorProps} props  
+ * @param {import('./TableProps').TablePaginatorProps} props  
  */
 
 export const TablePaginator = (props) => {

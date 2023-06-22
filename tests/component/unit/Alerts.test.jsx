@@ -8,23 +8,7 @@ import {faker} from "@faker-js/faker";
 const dummyResponse = {
     status: 200,
     message: "",
-    data: {
-        primaryColor: "#8C278F",
-        primaryVariantColor: "#ce73d1",
-        secondaryColor: "#34C38F",
-        secondaryVariantColor: "#9adbc3",
-        tertiaryColor: "#E1A401",
-        tertiaryVariantColor: "#e6c15e",
-        backgroundColor: "#FFFFFF",
-        surface: "#FFFFFF",
-        error: "#B00020",
-        onPrimary: "#FFFFFF",
-        onSecondary: "#FFFFFF",
-        onTertiary: "#FFFFFF",
-        onBackground: "#000000",
-        onSurface: "#000000",
-        onError: "#FFFFFF"
-    }
+    data: DEFAULT_VALUES.theme
 };
 
 describe("Alert ", () => {

@@ -1,19 +1,11 @@
 import { faChevronLeft, faChevronRight, faStepBackward, faStepForward } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTheme } from "../../../hooks/use-theme";
-import { paginatorButtonTypes } from "./paginator-button-types";
-
-/**
- * @typedef PaginatorButtonProps
- * @property {boolean} disabled
- * @property {() => void} clickHandler
- * @property {number} paginatorButtonType
- */
-
+import { paginatorButtonTypes } from "./TableProps";
 
 /**
  * 
- * @param {PaginatorButtonProps} props 
+ * @param {import('./TableProps').PaginatorButtonProps} props 
  * @returns 
  */
 

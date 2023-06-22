@@ -1,30 +1,12 @@
 import { useEffect, useState } from "react";
 import "./TableCell.css";
 
-/**
- * @typedef CellThemeConfig
- * @property {Object} background
- * @property {string} background.color
- * @property {string} background.onHoverColor
- * @property {Object} border
- * @property {string} border.color
- * @property {string} border.onHoverColor
- * @property {Object} text
- * @property {string} text.color
- * @property {string} text.onHoverColor
- */
 
-/**
- * @typedef TableCellProps
- * @property {boolean} hovered 
- * @property {JSX.Element} children
- * @property {CellThemeConfig} themeConfig
- */
 
 
 /**
  * 
- * @param {TableCellProps} props 
+ * @param {import('./TableProps').TableCellProps} props 
  * @returns 
  */
 export const TableCell = (props) => {
