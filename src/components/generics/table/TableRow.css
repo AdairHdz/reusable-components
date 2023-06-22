@@ -1,0 +1,15 @@
+.theme-table-body-row {
+    border-radius: 1.1rem;
+    transition: all 0.2s ease-in-out;            
+}
+
+.theme-table-body-row:hover {
+    box-shadow: 2px 2px 4px #ccc;
+    /* transform: scale(1.03); */
+    cursor: pointer;
+}
+
+/* .theme-table-body-row:hover .theme-table-body-cell {    
+    color: #fff !important;
+} */
+

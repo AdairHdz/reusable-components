@@ -1,0 +1,40 @@
+.theme-table-body-cell {
+    padding: 1rem;
+}
+
+/* xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px, */
+
+@media screen and (min-width: 1px) and (max-width: 576px) {
+    .theme-table-body-cell {
+        /* padding: 1rem; */
+    }   
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .theme-table-body-cell {
+        /* padding: 1rem 0.5rem; */
+    }   
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .theme-table-body-cell {
+        /* padding: 1rem 0.1rem; */
+    }   
+}
+
+.theme-table-body-cell:first-child {    
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: inherit;    
+}
+
+.theme-table-body-cell:last-child {    
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: inherit;    
+}
